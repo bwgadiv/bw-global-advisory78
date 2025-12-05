@@ -371,7 +371,7 @@ const CheckIcon = ({ className }: { className?: string }) => (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
 );
 
-// Navigation Button Helper
+// Navigation Button Helper - UPDATED to be static/relative instead of fixed
 const NavButtons = ({ 
     step, 
     setStep, 
@@ -383,7 +383,7 @@ const NavButtons = ({
     canNext: boolean, 
     finalAction?: () => void 
 }) => (
-    <div className="fixed bottom-0 left-0 w-full md:w-[60%] bg-white border-t border-stone-200 p-4 z-40 flex justify-between items-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+    <div className="mt-12 pt-8 border-t border-stone-200 flex justify-between items-center w-full pb-8">
         <button 
             onClick={() => setStep(Math.max(1, step - 1))} 
             disabled={step === 1}
@@ -941,7 +941,7 @@ const MainCanvas: React.FC<MainCanvasProps> = ({
 
     return (
         <div className="flex-1 w-full flex h-full bg-stone-50 font-sans text-stone-900 min-w-0">
-            <div className={`flex-1 flex flex-col border-r border-stone-200 bg-stone-50/30 transition-all duration-500 ${step === 6 ? 'w-0 opacity-0 hidden' : 'w-[60%] p-8 overflow-y-auto'}`}>
+            <div className={`flex-1 flex flex-col border-r border-stone-200 bg-stone-50/30 transition-all duration-500 ${step === 6 ? 'w-0 opacity-0 hidden' : 'w-[60%] p-8 pb-32 overflow-y-auto'}`}>
                 <div className="max-w-3xl mx-auto w-full">
                     <div className="mb-8">
                         <button onClick={() => setStep(Math.max(1, step - 1) as any)} disabled={step === 1} className="text-stone-400 hover:text-stone-800 mb-4 flex items-center gap-1 text-xs font-bold uppercase tracking-wider disabled:opacity-0 transition-opacity"><ChevronLeft size={14} /> Back</button>

@@ -18,7 +18,7 @@ const AdminDashboard: React.FC = () => {
   };
 
   return (
-    <div className="h-full w-full bg-stone-100 p-8 overflow-y-auto">
+    <div className="h-full w-full bg-stone-100 p-8 pb-32 overflow-y-auto">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-stone-900 mb-8 flex items-center gap-3">
           <Shield className="text-stone-700" size={32} /> Admin Console

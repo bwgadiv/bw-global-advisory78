@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { ReportParameters, SkillLevel } from '../types';
 import { ORGANIZATION_TYPES, ORGANIZATION_SUBTYPES, REGIONS_AND_COUNTRIES, INDUSTRIES, STRATEGIC_OBJECTIVES, STRATEGIC_LENSES, INDUSTRY_NICHES, INTELLIGENCE_CATEGORIES } from '../constants';
@@ -308,7 +309,7 @@ export const Gateway: React.FC<GatewayProps> = ({ params, onUpdate, onComplete }
     }, []);
 
     return (
-        <div id="gateway-container" className="h-full w-full flex flex-col items-center justify-start bg-stone-50 p-8 md:p-16 overflow-y-auto">
+        <div id="gateway-container" className="h-full w-full flex flex-col items-center justify-start bg-stone-50 p-8 md:p-16 pb-32 overflow-y-auto">
             <div className="max-w-6xl w-full bg-white rounded-3xl shadow-2xl border border-stone-200 overflow-hidden mb-16 shrink-0">
                 
                 <div className="bg-stone-900 text-white p-6 px-8 flex justify-between items-center">

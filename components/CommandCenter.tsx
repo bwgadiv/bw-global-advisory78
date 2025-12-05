@@ -21,7 +21,7 @@ const CommandCenter: React.FC<CommandCenterProps> = ({
     const [accepted, setAccepted] = useState(false);
 
     return (
-        <div className="h-full w-full flex-1 bg-stone-50 flex items-start justify-center p-6 pt-16 font-sans overflow-y-auto">
+        <div className="h-full w-full flex-1 bg-stone-50 flex items-start justify-center p-6 pt-16 pb-24 font-sans overflow-y-auto">
             <div className="max-w-6xl w-full bg-white shadow-2xl border border-stone-200 rounded-sm overflow-hidden flex flex-col md:flex-row min-h-[650px]">
                 
                 {/* Left Panel: Introduction */}
